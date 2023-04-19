@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AED51FD529EE7F1800B0F59F /* RetroPointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */; };
+		AED51FD729EE7F1800B0F59F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD629EE7F1800B0F59F /* Persistence.swift */; };
+		AED51FDA29EE7F1800B0F59F /* RetroPoint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */; };
+		AED51FDE29EE7F1900B0F59F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED51FDD29EE7F1900B0F59F /* Assets.xcassets */; };
+		AED51FE229EE7F1900B0F59F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED51FE129EE7F1900B0F59F /* Preview Assets.xcassets */; };
+		AED51FEC29EE7F1900B0F59F /* RetroPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FEB29EE7F1900B0F59F /* RetroPointTests.swift */; };
+		AED51FF629EE7F1900B0F59F /* RetroPointUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FF529EE7F1900B0F59F /* RetroPointUITests.swift */; };
+		AED51FF829EE7F1900B0F59F /* RetroPointUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FF729EE7F1900B0F59F /* RetroPointUITestsLaunchTests.swift */; };
+		AED5200529EE821500B0F59F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5200429EE821500B0F59F /* ContentView.swift */; };
+		AED5200729EE822000B0F59F /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5200629EE822000B0F59F /* SidebarView.swift */; };
+		AED5200929EE82B200B0F59F /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5200829EE82B200B0F59F /* MainContentView.swift */; };
+		AED5200B29EE82E900B0F59F /* InspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5200A29EE82E900B0F59F /* InspectorView.swift */; };
+		AED5200D29EE82F400B0F59F /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5200C29EE82F400B0F59F /* ToolbarView.swift */; };
+		AED5200F29EE889500B0F59F /* NewPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5200E29EE889500B0F59F /* NewPresentationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AED51FE829EE7F1900B0F59F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AED51FC929EE7F1800B0F59F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AED51FD029EE7F1800B0F59F;
+			remoteInfo = RetroPoint;
+		};
+		AED51FF229EE7F1900B0F59F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AED51FC929EE7F1800B0F59F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AED51FD029EE7F1800B0F59F;
+			remoteInfo = RetroPoint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AED51FD129EE7F1800B0F59F /* RetroPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPointApp.swift; sourceTree = "<group>"; };
+		AED51FD629EE7F1800B0F59F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AED51FD929EE7F1800B0F59F /* RetroPoint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RetroPoint.xcdatamodel; sourceTree = "<group>"; };
+		AED51FDD29EE7F1900B0F59F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AED51FDF29EE7F1900B0F59F /* RetroPoint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RetroPoint.entitlements; sourceTree = "<group>"; };
+		AED51FE129EE7F1900B0F59F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AED51FE729EE7F1900B0F59F /* RetroPointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroPointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED51FEB29EE7F1900B0F59F /* RetroPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPointTests.swift; sourceTree = "<group>"; };
+		AED51FF129EE7F1900B0F59F /* RetroPointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroPointUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED51FF529EE7F1900B0F59F /* RetroPointUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPointUITests.swift; sourceTree = "<group>"; };
+		AED51FF729EE7F1900B0F59F /* RetroPointUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPointUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AED5200429EE821500B0F59F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AED5200629EE822000B0F59F /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		AED5200829EE82B200B0F59F /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		AED5200A29EE82E900B0F59F /* InspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorView.swift; sourceTree = "<group>"; };
+		AED5200C29EE82F400B0F59F /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		AED5200E29EE889500B0F59F /* NewPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPresentationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AED51FCE29EE7F1800B0F59F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED51FE429EE7F1900B0F59F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED51FEE29EE7F1900B0F59F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AED51FC829EE7F1800B0F59F = {
+			isa = PBXGroup;
+			children = (
+				AED51FD329EE7F1800B0F59F /* RetroPoint */,
+				AED51FEA29EE7F1900B0F59F /* RetroPointTests */,
+				AED51FF429EE7F1900B0F59F /* RetroPointUITests */,
+				AED51FD229EE7F1800B0F59F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AED51FD229EE7F1800B0F59F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AED51FD129EE7F1800B0F59F /* RetroPoint.app */,
+				AED51FE729EE7F1900B0F59F /* RetroPointTests.xctest */,
+				AED51FF129EE7F1900B0F59F /* RetroPointUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AED51FD329EE7F1800B0F59F /* RetroPoint */ = {
+			isa = PBXGroup;
+			children = (
+				AED5200C29EE82F400B0F59F /* ToolbarView.swift */,
+				AED5200A29EE82E900B0F59F /* InspectorView.swift */,
+				AED5200829EE82B200B0F59F /* MainContentView.swift */,
+				AED5200629EE822000B0F59F /* SidebarView.swift */,
+				AED5200429EE821500B0F59F /* ContentView.swift */,
+				AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */,
+				AED51FD629EE7F1800B0F59F /* Persistence.swift */,
+				AED51FDD29EE7F1900B0F59F /* Assets.xcassets */,
+				AED51FDF29EE7F1900B0F59F /* RetroPoint.entitlements */,
+				AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */,
+				AED51FE029EE7F1900B0F59F /* Preview Content */,
+				AED5200E29EE889500B0F59F /* NewPresentationView.swift */,
+			);
+			path = RetroPoint;
+			sourceTree = "<group>";
+		};
+		AED51FE029EE7F1900B0F59F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AED51FE129EE7F1900B0F59F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AED51FEA29EE7F1900B0F59F /* RetroPointTests */ = {
+			isa = PBXGroup;
+			children = (
+				AED51FEB29EE7F1900B0F59F /* RetroPointTests.swift */,
+			);
+			path = RetroPointTests;
+			sourceTree = "<group>";
+		};
+		AED51FF429EE7F1900B0F59F /* RetroPointUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AED51FF529EE7F1900B0F59F /* RetroPointUITests.swift */,
+				AED51FF729EE7F1900B0F59F /* RetroPointUITestsLaunchTests.swift */,
+			);
+			path = RetroPointUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AED51FD029EE7F1800B0F59F /* RetroPoint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AED51FFB29EE7F1900B0F59F /* Build configuration list for PBXNativeTarget "RetroPoint" */;
+			buildPhases = (
+				AED51FCD29EE7F1800B0F59F /* Sources */,
+				AED51FCE29EE7F1800B0F59F /* Frameworks */,
+				AED51FCF29EE7F1800B0F59F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetroPoint;
+			productName = RetroPoint;
+			productReference = AED51FD129EE7F1800B0F59F /* RetroPoint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AED51FE629EE7F1900B0F59F /* RetroPointTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AED51FFE29EE7F1900B0F59F /* Build configuration list for PBXNativeTarget "RetroPointTests" */;
+			buildPhases = (
+				AED51FE329EE7F1900B0F59F /* Sources */,
+				AED51FE429EE7F1900B0F59F /* Frameworks */,
+				AED51FE529EE7F1900B0F59F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AED51FE929EE7F1900B0F59F /* PBXTargetDependency */,
+			);
+			name = RetroPointTests;
+			productName = RetroPointTests;
+			productReference = AED51FE729EE7F1900B0F59F /* RetroPointTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AED51FF029EE7F1900B0F59F /* RetroPointUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AED5200129EE7F1900B0F59F /* Build configuration list for PBXNativeTarget "RetroPointUITests" */;
+			buildPhases = (
+				AED51FED29EE7F1900B0F59F /* Sources */,
+				AED51FEE29EE7F1900B0F59F /* Frameworks */,
+				AED51FEF29EE7F1900B0F59F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AED51FF329EE7F1900B0F59F /* PBXTargetDependency */,
+			);
+			name = RetroPointUITests;
+			productName = RetroPointUITests;
+			productReference = AED51FF129EE7F1900B0F59F /* RetroPointUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AED51FC929EE7F1800B0F59F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					AED51FD029EE7F1800B0F59F = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					AED51FE629EE7F1900B0F59F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AED51FD029EE7F1800B0F59F;
+					};
+					AED51FF029EE7F1900B0F59F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AED51FD029EE7F1800B0F59F;
+					};
+				};
+			};
+			buildConfigurationList = AED51FCC29EE7F1800B0F59F /* Build configuration list for PBXProject "RetroPoint" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AED51FC829EE7F1800B0F59F;
+			productRefGroup = AED51FD229EE7F1800B0F59F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AED51FD029EE7F1800B0F59F /* RetroPoint */,
+				AED51FE629EE7F1900B0F59F /* RetroPointTests */,
+				AED51FF029EE7F1900B0F59F /* RetroPointUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AED51FCF29EE7F1800B0F59F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED51FE229EE7F1900B0F59F /* Preview Assets.xcassets in Resources */,
+				AED51FDE29EE7F1900B0F59F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED51FE529EE7F1900B0F59F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED51FEF29EE7F1900B0F59F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AED51FCD29EE7F1800B0F59F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED51FD529EE7F1800B0F59F /* RetroPointApp.swift in Sources */,
+				AED51FDA29EE7F1800B0F59F /* RetroPoint.xcdatamodeld in Sources */,
+				AED5200D29EE82F400B0F59F /* ToolbarView.swift in Sources */,
+				AED5200729EE822000B0F59F /* SidebarView.swift in Sources */,
+				AED5200529EE821500B0F59F /* ContentView.swift in Sources */,
+				AED5200B29EE82E900B0F59F /* InspectorView.swift in Sources */,
+				AED51FD729EE7F1800B0F59F /* Persistence.swift in Sources */,
+				AED5200929EE82B200B0F59F /* MainContentView.swift in Sources */,
+				AED5200F29EE889500B0F59F /* NewPresentationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED51FE329EE7F1900B0F59F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED51FEC29EE7F1900B0F59F /* RetroPointTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED51FED29EE7F1900B0F59F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED51FF829EE7F1900B0F59F /* RetroPointUITestsLaunchTests.swift in Sources */,
+				AED51FF629EE7F1900B0F59F /* RetroPointUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AED51FE929EE7F1900B0F59F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AED51FD029EE7F1800B0F59F /* RetroPoint */;
+			targetProxy = AED51FE829EE7F1900B0F59F /* PBXContainerItemProxy */;
+		};
+		AED51FF329EE7F1900B0F59F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AED51FD029EE7F1800B0F59F /* RetroPoint */;
+			targetProxy = AED51FF229EE7F1900B0F59F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AED51FF929EE7F1900B0F59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AED51FFA29EE7F1900B0F59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AED51FFC29EE7F1900B0F59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RetroPoint/RetroPoint.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.retrovision.RetroPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AED51FFD29EE7F1900B0F59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RetroPoint/RetroPoint.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.retrovision.RetroPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AED51FFF29EE7F1900B0F59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.retrovision.RetroPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroPoint.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroPoint";
+			};
+			name = Debug;
+		};
+		AED5200029EE7F1900B0F59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.retrovision.RetroPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroPoint.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroPoint";
+			};
+			name = Release;
+		};
+		AED5200229EE7F1900B0F59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.retrovision.RetroPointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetroPoint;
+			};
+			name = Debug;
+		};
+		AED5200329EE7F1900B0F59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.retrovision.RetroPointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetroPoint;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AED51FCC29EE7F1800B0F59F /* Build configuration list for PBXProject "RetroPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED51FF929EE7F1900B0F59F /* Debug */,
+				AED51FFA29EE7F1900B0F59F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AED51FFB29EE7F1900B0F59F /* Build configuration list for PBXNativeTarget "RetroPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED51FFC29EE7F1900B0F59F /* Debug */,
+				AED51FFD29EE7F1900B0F59F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AED51FFE29EE7F1900B0F59F /* Build configuration list for PBXNativeTarget "RetroPointTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED51FFF29EE7F1900B0F59F /* Debug */,
+				AED5200029EE7F1900B0F59F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AED5200129EE7F1900B0F59F /* Build configuration list for PBXNativeTarget "RetroPointUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED5200229EE7F1900B0F59F /* Debug */,
+				AED5200329EE7F1900B0F59F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AED51FD929EE7F1800B0F59F /* RetroPoint.xcdatamodel */,
+			);
+			currentVersion = AED51FD929EE7F1800B0F59F /* RetroPoint.xcdatamodel */;
+			path = RetroPoint.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AED51FC929EE7F1800B0F59F /* Project object */;
+}
