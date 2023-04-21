@@ -47,7 +47,8 @@ struct Sidebar: View {
     private func destinationView(for item: SidebarItem) -> some View {
         switch item {
         case .newPresentation:
-            NewPresentationView()
+            Text("Switched off")
+            //NewPresentationView()
         case .templates:
             Text("Templates")
         case .savedPresentations:

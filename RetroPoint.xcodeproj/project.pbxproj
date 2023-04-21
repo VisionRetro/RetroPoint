@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5957F58029EFDF6F008BE8E5 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5957F57F29EFDF6F008BE8E5 /* SlideView.swift */; };
+		5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */; };
+		5999EBD829F29F4A00C2E880 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD729F29F4A00C2E880 /* SlideView.swift */; };
 		AED51FD529EE7F1800B0F59F /* RetroPointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */; };
 		AED51FD729EE7F1800B0F59F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD629EE7F1800B0F59F /* Persistence.swift */; };
 		AED51FDA29EE7F1800B0F59F /* RetroPoint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		5957F57F29EFDF6F008BE8E5 /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableFont.swift; sourceTree = "<group>"; };
+		5999EBD729F29F4A00C2E880 /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 		AED51FD129EE7F1800B0F59F /* RetroPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPointApp.swift; sourceTree = "<group>"; };
 		AED51FD629EE7F1800B0F59F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -88,6 +91,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5986B3CC29F28CE20005A01E /* MacViews */ = {
+			isa = PBXGroup;
+			children = (
+				AED5200A29EE82E900B0F59F /* InspectorView.swift */,
+				AED5200829EE82B200B0F59F /* MainContentView.swift */,
+				AED5200E29EE889500B0F59F /* NewPresentationView.swift */,
+				AED5200629EE822000B0F59F /* SidebarView.swift */,
+				AED5200C29EE82F400B0F59F /* ToolbarView.swift */,
+			);
+			path = MacViews;
+			sourceTree = "<group>";
+		};
+		5986B3CD29F28D380005A01E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AED51FDD29EE7F1900B0F59F /* Assets.xcassets */,
+				AED5200429EE821500B0F59F /* ContentView.swift */,
+				AED51FD629EE7F1800B0F59F /* Persistence.swift */,
+				AED51FE029EE7F1900B0F59F /* Preview Content */,
+				AED51FDF29EE7F1900B0F59F /* RetroPoint.entitlements */,
+				AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */,
+				AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5986B3CE29F291BE0005A01E /* Extern */ = {
+			isa = PBXGroup;
+			children = (
+				5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */,
+			);
+			path = Extern;
+			sourceTree = "<group>";
+		};
+		5999EBD429F29F2000C2E880 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5957F57F29EFDF6F008BE8E5 /* SlideView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		AED51FC829EE7F1800B0F59F = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +140,7 @@
 				AED51FEA29EE7F1900B0F59F /* RetroPointTests */,
 				AED51FF429EE7F1900B0F59F /* RetroPointUITests */,
 				AED51FD229EE7F1800B0F59F /* Products */,
+				5999EBD429F29F2000C2E880 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,19 +157,10 @@
 		AED51FD329EE7F1800B0F59F /* RetroPoint */ = {
 			isa = PBXGroup;
 			children = (
-				AED5200C29EE82F400B0F59F /* ToolbarView.swift */,
-				AED5200A29EE82E900B0F59F /* InspectorView.swift */,
-				AED5200829EE82B200B0F59F /* MainContentView.swift */,
-				AED5200629EE822000B0F59F /* SidebarView.swift */,
-				AED5200429EE821500B0F59F /* ContentView.swift */,
-				AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */,
-				AED51FD629EE7F1800B0F59F /* Persistence.swift */,
-				AED51FDD29EE7F1900B0F59F /* Assets.xcassets */,
-				AED51FDF29EE7F1900B0F59F /* RetroPoint.entitlements */,
-				AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */,
-				AED51FE029EE7F1900B0F59F /* Preview Content */,
-				AED5200E29EE889500B0F59F /* NewPresentationView.swift */,
-				5957F57F29EFDF6F008BE8E5 /* SlideView.swift */,
+				5986B3CD29F28D380005A01E /* App */,
+				5986B3CE29F291BE0005A01E /* Extern */,
+				5986B3CC29F28CE20005A01E /* MacViews */,
+				5999EBD729F29F4A00C2E880 /* SlideView.swift */,
 			);
 			path = RetroPoint;
 			sourceTree = "<group>";
@@ -285,9 +322,10 @@
 			files = (
 				AED51FD529EE7F1800B0F59F /* RetroPointApp.swift in Sources */,
 				AED51FDA29EE7F1800B0F59F /* RetroPoint.xcdatamodeld in Sources */,
+				5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */,
 				AED5200D29EE82F400B0F59F /* ToolbarView.swift in Sources */,
 				AED5200729EE822000B0F59F /* SidebarView.swift in Sources */,
-				5957F58029EFDF6F008BE8E5 /* SlideView.swift in Sources */,
+				5999EBD829F29F4A00C2E880 /* SlideView.swift in Sources */,
 				AED5200529EE821500B0F59F /* ContentView.swift in Sources */,
 				AED5200B29EE82E900B0F59F /* InspectorView.swift in Sources */,
 				AED51FD729EE7F1800B0F59F /* Persistence.swift in Sources */,
@@ -443,10 +481,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RetroPoint/RetroPoint.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RetroPoint/App/RetroPoint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -479,10 +517,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RetroPoint/RetroPoint.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RetroPoint/App/RetroPoint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
