@@ -86,6 +86,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5986B3CC29F28CE20005A01E /* MacViews */ = {
+			isa = PBXGroup;
+			children = (
+				AED5200A29EE82E900B0F59F /* InspectorView.swift */,
+				AED5200829EE82B200B0F59F /* MainContentView.swift */,
+				AED5200E29EE889500B0F59F /* NewPresentationView.swift */,
+				AED5200629EE822000B0F59F /* SidebarView.swift */,
+				AED5200C29EE82F400B0F59F /* ToolbarView.swift */,
+			);
+			path = MacViews;
+			sourceTree = "<group>";
+		};
+		5986B3CD29F28D380005A01E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AED51FDD29EE7F1900B0F59F /* Assets.xcassets */,
+				AED5200429EE821500B0F59F /* ContentView.swift */,
+				AED51FD629EE7F1800B0F59F /* Persistence.swift */,
+				AED51FE029EE7F1900B0F59F /* Preview Content */,
+				AED51FDF29EE7F1900B0F59F /* RetroPoint.entitlements */,
+				AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */,
+				AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		AED51FC829EE7F1800B0F59F = {
 			isa = PBXGroup;
 			children = (
@@ -109,18 +135,8 @@
 		AED51FD329EE7F1800B0F59F /* RetroPoint */ = {
 			isa = PBXGroup;
 			children = (
-				AED5200C29EE82F400B0F59F /* ToolbarView.swift */,
-				AED5200A29EE82E900B0F59F /* InspectorView.swift */,
-				AED5200829EE82B200B0F59F /* MainContentView.swift */,
-				AED5200629EE822000B0F59F /* SidebarView.swift */,
-				AED5200429EE821500B0F59F /* ContentView.swift */,
-				AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */,
-				AED51FD629EE7F1800B0F59F /* Persistence.swift */,
-				AED51FDD29EE7F1900B0F59F /* Assets.xcassets */,
-				AED51FDF29EE7F1900B0F59F /* RetroPoint.entitlements */,
-				AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */,
-				AED51FE029EE7F1900B0F59F /* Preview Content */,
-				AED5200E29EE889500B0F59F /* NewPresentationView.swift */,
+				5986B3CD29F28D380005A01E /* App */,
+				5986B3CC29F28CE20005A01E /* MacViews */,
 			);
 			path = RetroPoint;
 			sourceTree = "<group>";
@@ -439,10 +455,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RetroPoint/RetroPoint.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RetroPoint/App/RetroPoint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -475,10 +491,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RetroPoint/RetroPoint.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RetroPoint/App/RetroPoint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

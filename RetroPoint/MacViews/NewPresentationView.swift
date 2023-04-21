@@ -5,8 +5,9 @@
 //  Created by Michael Santoso on 18/4/2566 BE.
 //
 
+#if os(macOS)
+
 import SwiftUI
-import AppKit
 
 struct Presentation: Identifiable {
     let id: UUID
@@ -192,3 +193,5 @@ struct ImagePicker: NSViewRepresentable {
         }
     }
 }
+
+#endif
