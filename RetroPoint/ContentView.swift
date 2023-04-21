@@ -10,14 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            Sidebar()
-
-            MainContentView()
-                .toolbar {
-                    ToolbarView()
-                }
-
-            InspectorView()
+//            Sidebar()
+//
+//            MainContentView()
+//                .toolbar {
+//                    ToolbarView()
+//                }
+//
+//            InspectorView()
+            SlideView(slideViewModel: slides[slides.count - 1])
         }
     }
 }
