@@ -12,7 +12,6 @@ struct ContentView: View {
 
     var body: some View {
         SlideView(slideViewModel: slides[slides.count - 1])
-        //Text("Fix Me").scaledFont(size: 12)
             .environment(\.fontScaleFactor, scale)
             .onAppear {
                 withAnimation(.spring().delay(0.5)) { scale = 3}

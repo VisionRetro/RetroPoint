@@ -30,14 +30,11 @@ struct SlideView: View {
         VStack(alignment: .leading) {
             HStack {
                 Text(slideViewModel.title)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                .foregroundColor(.white)
+                    .scaledFont(size: 20, weight: .bold)
+                    .foregroundColor(.white)
             }
             .padding(.vertical, 32)
             .frame(maxWidth: .infinity, alignment: .center)
-
-            Spacer()
 
             VStack(alignment: .leading) {
                 ForEach(slideViewModel.bulletPoints, id: \.self) { point in
@@ -47,15 +44,17 @@ struct SlideView: View {
                             .font(.callout)
 
                         Text(point)
-                            .font(.title)
+                            .scaledFont(size: 12, weight: .bold)
                     }
                     .padding(.bottom, 16)
                     .foregroundColor(.white)
                 }
             }
-            .padding(.bottom, 32)
+            .padding(64)
+            Spacer()
+
         }
-        .padding()
+        .padding(50)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
     }
 }
@@ -63,5 +62,6 @@ struct SlideView: View {
 struct SlideView_Previews: PreviewProvider {
     static var previews: some View {
         SlideView(slideViewModel: slides[0])
+            .environment(\.fontScaleFactor, 1)
     }
 }
