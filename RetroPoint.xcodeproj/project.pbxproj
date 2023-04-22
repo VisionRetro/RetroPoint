@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */; };
 		5999EBD829F29F4A00C2E880 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD729F29F4A00C2E880 /* SlideView.swift */; };
+		8EF50A8029F3E6FE00018D66 /* AnimationEndCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF50A7F29F3E6FE00018D66 /* AnimationEndCallback.swift */; };
 		AED51FD529EE7F1800B0F59F /* RetroPointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */; };
 		AED51FD729EE7F1800B0F59F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD629EE7F1800B0F59F /* Persistence.swift */; };
 		AED51FDA29EE7F1800B0F59F /* RetroPoint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */; };
@@ -43,9 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5957F57F29EFDF6F008BE8E5 /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 		5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableFont.swift; sourceTree = "<group>"; };
 		5999EBD729F29F4A00C2E880 /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		8EF50A7F29F3E6FE00018D66 /* AnimationEndCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEndCallback.swift; sourceTree = "<group>"; };
 		AED51FD129EE7F1800B0F59F /* RetroPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPointApp.swift; sourceTree = "<group>"; };
 		AED51FD629EE7F1800B0F59F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -121,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */,
+				8EF50A7F29F3E6FE00018D66 /* AnimationEndCallback.swift */,
 			);
 			path = Extern;
 			sourceTree = "<group>";
@@ -254,7 +256,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					AED51FD029EE7F1800B0F59F = {
 						CreatedOnToolsVersion = 14.1;
@@ -321,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED51FD529EE7F1800B0F59F /* RetroPointApp.swift in Sources */,
+				8EF50A8029F3E6FE00018D66 /* AnimationEndCallback.swift in Sources */,
+				8EF50A8129F3E90300018D66 /* AnimatableFont.swift in Sources */,
 				AED51FDA29EE7F1800B0F59F /* RetroPoint.xcdatamodeld in Sources */,
 				5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */,
 				AED5200D29EE82F400B0F59F /* ToolbarView.swift in Sources */,
@@ -400,6 +404,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -458,6 +463,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -484,6 +490,7 @@
 				CODE_SIGN_ENTITLEMENTS = RetroPoint/App/RetroPoint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -520,6 +527,7 @@
 				CODE_SIGN_ENTITLEMENTS = RetroPoint/App/RetroPoint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RetroPoint/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -555,6 +563,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -577,6 +586,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -598,6 +608,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -619,6 +630,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
