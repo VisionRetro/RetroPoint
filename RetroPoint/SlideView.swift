@@ -17,6 +17,8 @@ struct SlideViewModel {
     let bulletPoints: [String]
     var slideType: SlideType = .bulletPoint
     var image: URL?
+
+    static let `default` = SlideViewModel(title: "", bulletPoints: [])
 }
 
 let slides = [
@@ -44,24 +46,29 @@ let slides = [
     ]),
     SlideViewModel(title: "Improved User Engagement", bulletPoints: [
         "Interactive response",
-        "Record history of conversation",
-        "Reduced development costs",
-        "Better scalability",
-        "Improved accuracy"
+        "Personalized response based on input",
+        "Record history of conversation"
     ]),
     SlideViewModel(title: "Reduced development costs", bulletPoints: [
-        "Personal Assistants",
-        "Help with the tedious task",
+        "Personal Assistants (copywriting, marketing, product, etc)",
+        "Help with the tedious task (i.e. generating mock data, content outlines, ideas)",
+        "Automating most-time consuming tasks (i.e. FAQ)",
+        "Help to find and identify root cause of a bug"
     ]),
     SlideViewModel(title: "Better scalability", bulletPoints: [
-        ""
+        "Generating summarizes in large numbers / volume in real time (Aggregator MVP)",
+        "Identifying security logs as potential to cyber attacks and provide recommendations"
     ]),
     SlideViewModel(title: "Improved accuracy", bulletPoints: [
-        ""
+        "Generating more precise and accurate results based on user input",
+        "Medical diagnosis MVP Product (input patient symptoms product can generate list of potential diagnoses along with recommended tests and treatments)",
+        "Combined the result with internal database or doctor's experience / knowledge"
     ]),
     SlideViewModel(title: "Make the best out of ChatGPT", bulletPoints: [
-        "Construct good input prompt and train the AI to make them learn to make best response",
+        "Make the AI as personal assistants",
+        "Construct good input prompt and train the AI to make them learn to make suitable and accurate response",
         "Give some rules related to the output inside input prompt",
+        "Learn how to parse string to your expected format",
         "Connect output with your internal data"
     ]),
     SlideViewModel(title: "Title", bulletPoints: [
@@ -71,20 +78,53 @@ let slides = [
 ]
 
 struct SlideView: View {
-    let slideViewModel: SlideViewModel
+    let slides: [SlideViewModel]
+
+    @State private var currentSlide: SlideViewModel = .default
+
+    @State private var slideIndex = 0
+
+    init(slides: [SlideViewModel]) {
+        self.slides = slides
+    }
+
+    var body: some View {
+        HStack {
+            Button("Previous") {
+                slideIndex -= 1
+            }
+            .disabled(slideIndex == 0)
+            SlideContentView(slideViewModel: $currentSlide)
+            Button("Next") {
+                slideIndex += 1
+            }
+            .disabled(slideIndex == slides.count - 1)
+        }
+        .onChange(of: slideIndex) { newValue in
+            withAnimation(.interactiveSpring()) {
+
+                currentSlide = slides[newValue]
+            }
+        }
+        .onAppear {
+            currentSlide = slides[slideIndex]
+        }
+        .padding()
+    }
+}
+
+struct SlideContentView: View {
+    @Binding var slideViewModel: SlideViewModel
 
     var bulletPointSlideView: some View {
         VStack(alignment: .leading) {
             HStack {
                 Text(slideViewModel.title)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                .foregroundColor(.white)
+                    .scaledFont(size: 20, weight: .bold)
+                    .foregroundColor(.white)
             }
             .padding(.vertical, 32)
             .frame(maxWidth: .infinity, alignment: .center)
-
-            Spacer()
 
             VStack(alignment: .leading) {
                 ForEach(slideViewModel.bulletPoints, id: \.self) { point in
@@ -94,15 +134,17 @@ struct SlideView: View {
                             .font(.callout)
 
                         Text(point)
-                            .font(.title)
+                            .scaledFont(size: 12, weight: .bold)
                     }
                     .padding(.bottom, 16)
                     .foregroundColor(.white)
                 }
             }
-            .padding(.bottom, 32)
+            .padding(64)
+            Spacer()
+
         }
-        .padding()
+        .padding(50)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
     }
 
@@ -153,6 +195,7 @@ struct SlideView: View {
 
 struct SlideView_Previews: PreviewProvider {
     static var previews: some View {
-        SlideView(slideViewModel: slides[slides.count - 1])
+        SlideView(slides: slides)
+            .environment(\.fontScaleFactor, 1)
     }
 }
