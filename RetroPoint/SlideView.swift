@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 enum SlideType {
     case bulletPoint
     case bulletPointImage
@@ -75,7 +76,13 @@ let slideData = [
         "Support Images",
         "Async Loading",
         "Scaling"
-    ], slideType: .bulletPointImage, image: URL(string: "https://scontent.fbkk2-4.fna.fbcdn.net/v/t39.30808-6/341519370_711205544081347_5941551301377156390_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=dEXJsCWCjTQAX_bNIiU&_nc_ht=scontent.fbkk2-4.fna&oh=00_AfDqBV7vRs9WlqlhaEL6t65cJuhiBoevX7vr7jXT5Fi02g&oe=64465776"))
+    ], slideType: .bulletPointImage, image: URL(string: "https://scontent.fbkk2-4.fna.fbcdn.net/v/t39.30808-6/341519370_711205544081347_5941551301377156390_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=dEXJsCWCjTQAX_bNIiU&_nc_ht=scontent.fbkk2-4.fna&oh=00_AfDqBV7vRs9WlqlhaEL6t65cJuhiBoevX7vr7jXT5Fi02g&oe=64465776")),
+    SlideViewModel(title: "Productive usage of Copilot", bulletPoints: [
+        "Keyshortcuts for Copilot",
+        "Structured Code",
+        "Unit Test",
+    ], slideType: .bulletPointImage, image: URL(string: "https://user-images.githubusercontent.com/33759139/213192992-1714b25f-bfc9-46d4-aa7e-b594b2c84092.png")),
+    
 ]
 
 struct SlideView: View {

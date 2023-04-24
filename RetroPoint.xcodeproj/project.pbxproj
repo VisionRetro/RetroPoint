@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		597DC5F229F640EA002A9AC2 /* SomeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F129F640EA002A9AC2 /* SomeCode.swift */; };
 		5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */; };
 		5999EBD829F29F4A00C2E880 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD729F29F4A00C2E880 /* SlideView.swift */; };
 		8EF50A8029F3E6FE00018D66 /* AnimationEndCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF50A7F29F3E6FE00018D66 /* AnimationEndCallback.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		597DC5F129F640EA002A9AC2 /* SomeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeCode.swift; sourceTree = "<group>"; };
 		5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableFont.swift; sourceTree = "<group>"; };
 		5999EBD729F29F4A00C2E880 /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 		8EF50A7F29F3E6FE00018D66 /* AnimationEndCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEndCallback.swift; sourceTree = "<group>"; };
@@ -130,7 +132,6 @@
 		5999EBD429F29F2000C2E880 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				5957F57F29EFDF6F008BE8E5 /* SlideView.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -163,6 +164,7 @@
 				5986B3CE29F291BE0005A01E /* Extern */,
 				5986B3CC29F28CE20005A01E /* MacViews */,
 				5999EBD729F29F4A00C2E880 /* SlideView.swift */,
+				597DC5F129F640EA002A9AC2 /* SomeCode.swift */,
 			);
 			path = RetroPoint;
 			sourceTree = "<group>";
@@ -324,7 +326,7 @@
 			files = (
 				AED51FD529EE7F1800B0F59F /* RetroPointApp.swift in Sources */,
 				8EF50A8029F3E6FE00018D66 /* AnimationEndCallback.swift in Sources */,
-				8EF50A8129F3E90300018D66 /* AnimatableFont.swift in Sources */,
+				597DC5F229F640EA002A9AC2 /* SomeCode.swift in Sources */,
 				AED51FDA29EE7F1800B0F59F /* RetroPoint.xcdatamodeld in Sources */,
 				5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */,
 				AED5200D29EE82F400B0F59F /* ToolbarView.swift in Sources */,
