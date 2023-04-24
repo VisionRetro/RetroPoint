@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		597DC5F229F640EA002A9AC2 /* SomeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F129F640EA002A9AC2 /* SomeCode.swift */; };
+		597DC5F429F66C22002A9AC2 /* FontViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F329F66C22002A9AC2 /* FontViewer.swift */; };
+		597DC5F629F66DF7002A9AC2 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F529F66DF7002A9AC2 /* RandomColor.swift */; };
 		5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */; };
 		5999EBD829F29F4A00C2E880 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD729F29F4A00C2E880 /* SlideView.swift */; };
 		8EF50A8029F3E6FE00018D66 /* AnimationEndCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF50A7F29F3E6FE00018D66 /* AnimationEndCallback.swift */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		597DC5F129F640EA002A9AC2 /* SomeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeCode.swift; sourceTree = "<group>"; };
+		597DC5F329F66C22002A9AC2 /* FontViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewer.swift; sourceTree = "<group>"; };
+		597DC5F529F66DF7002A9AC2 /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableFont.swift; sourceTree = "<group>"; };
 		5999EBD729F29F4A00C2E880 /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 		8EF50A7F29F3E6FE00018D66 /* AnimationEndCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEndCallback.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				5986B3CC29F28CE20005A01E /* MacViews */,
 				5999EBD729F29F4A00C2E880 /* SlideView.swift */,
 				597DC5F129F640EA002A9AC2 /* SomeCode.swift */,
+				597DC5F329F66C22002A9AC2 /* FontViewer.swift */,
+				597DC5F529F66DF7002A9AC2 /* RandomColor.swift */,
 			);
 			path = RetroPoint;
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED51FD529EE7F1800B0F59F /* RetroPointApp.swift in Sources */,
+				597DC5F629F66DF7002A9AC2 /* RandomColor.swift in Sources */,
 				8EF50A8029F3E6FE00018D66 /* AnimationEndCallback.swift in Sources */,
 				597DC5F229F640EA002A9AC2 /* SomeCode.swift in Sources */,
 				AED51FDA29EE7F1800B0F59F /* RetroPoint.xcdatamodeld in Sources */,
@@ -332,6 +339,7 @@
 				AED5200D29EE82F400B0F59F /* ToolbarView.swift in Sources */,
 				AED5200729EE822000B0F59F /* SidebarView.swift in Sources */,
 				5999EBD829F29F4A00C2E880 /* SlideView.swift in Sources */,
+				597DC5F429F66C22002A9AC2 /* FontViewer.swift in Sources */,
 				AED5200529EE821500B0F59F /* ContentView.swift in Sources */,
 				AED5200B29EE82E900B0F59F /* InspectorView.swift in Sources */,
 				AED51FD729EE7F1800B0F59F /* Persistence.swift in Sources */,
