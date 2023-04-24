@@ -9,15 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var scale = 1
+    @State private var slideIndex = 0
 
     var body: some View {
-        SlideView(slides: slides)
+        SlideView(slides: slideData, slideIndex: $slideIndex)
             .frame(minWidth: 1000, minHeight: 720)
             .modifier(SlideFooterViewModifier())
             .environment(\.fontScaleFactor, scale)
             .onAppear {
                 withAnimation(.spring().delay(0.5)) { scale = 3}
             }
+            .id(slideIndex)
     }
 }
 

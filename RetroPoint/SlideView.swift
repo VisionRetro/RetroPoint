@@ -21,7 +21,7 @@ struct SlideViewModel {
     static let `default` = SlideViewModel(title: "", bulletPoints: [])
 }
 
-let slides = [
+let slideData = [
     SlideViewModel(title: "Why should I use SwiftUI?", bulletPoints: [
         "It's easy to use",
         "It's declarative",
@@ -71,45 +71,64 @@ let slides = [
         "Learn how to parse string to your expected format",
         "Connect output with your internal data"
     ]),
-    SlideViewModel(title: "Title", bulletPoints: [
-        "Nice Image",
-        "Nice Image 2",
+    SlideViewModel(title: "Slide with Image", bulletPoints: [
+        "Support Images",
+        "Async Loading",
+        "Scaling"
     ], slideType: .bulletPointImage, image: URL(string: "https://scontent.fbkk2-4.fna.fbcdn.net/v/t39.30808-6/341519370_711205544081347_5941551301377156390_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=dEXJsCWCjTQAX_bNIiU&_nc_ht=scontent.fbkk2-4.fna&oh=00_AfDqBV7vRs9WlqlhaEL6t65cJuhiBoevX7vr7jXT5Fi02g&oe=64465776"))
 ]
 
 struct SlideView: View {
     let slides: [SlideViewModel]
+    @Binding var slideIndex: Int
 
-    @State private var currentSlide: SlideViewModel = .default
-
-    @State private var slideIndex = 0
-
-    init(slides: [SlideViewModel]) {
-        self.slides = slides
-    }
+    @State private var currentSlide: SlideViewModel = slideData[slideData.count - 1]
 
     var body: some View {
-        HStack {
-            Button("Previous") {
-                slideIndex -= 1
+        ZStack {
+            HStack {
+                VStack {
+                    Color.clear
+                    Button("Prev") {
+                        slideIndex -= 1
+                    }
+                    .foregroundColor(.clear)
+                    .keyboardShortcut(.leftArrow, modifiers: [.command])
+                }
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    slideIndex -= 1
+                }
+                .disabled(slideIndex < 1)
+
+                VStack {
+                    Color.clear
+                    Button("Next") {
+                        slideIndex += 1
+                    }
+                    .foregroundColor(.clear)
+                    .keyboardShortcut(.rightArrow, modifiers: [.command])
+                }
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    slideIndex += 1
+                }
+                .disabled(slideIndex >= slides.count - 1)
             }
-            .disabled(slideIndex == 0)
+            .buttonStyle(.borderless)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+
             SlideContentView(slideViewModel: $currentSlide)
-            Button("Next") {
-                slideIndex += 1
-            }
-            .disabled(slideIndex == slides.count - 1)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .onChange(of: slideIndex) { newValue in
             withAnimation(.interactiveSpring()) {
-
                 currentSlide = slides[newValue]
             }
         }
         .onAppear {
             currentSlide = slides[slideIndex]
         }
-        .padding()
     }
 }
 
@@ -152,9 +171,8 @@ struct SlideContentView: View {
         VStack(alignment: .leading) {
             HStack {
                 Text(slideViewModel.title)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                .foregroundColor(.white)
+                    .scaledFont(size: 20, weight: .bold)
+                    .foregroundColor(.white)
             }
             .padding(.vertical, 32)
             .frame(maxWidth: .infinity, alignment: .center)
@@ -170,14 +188,31 @@ struct SlideContentView: View {
                                 .font(.callout)
 
                             Text(point)
-                                .font(.title)
+                                .scaledFont(size: 12, weight: .bold)
                         }
                         .padding(.bottom, 16)
                         .foregroundColor(.white)
                     }
+                    Spacer()
                 }
-                .padding(.bottom, 32)
-                AsyncImage(url: slideViewModel.image)
+                .padding(64)
+
+                Spacer()
+
+                AsyncImage(url: slideViewModel.image) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                } placeholder: {
+                    VStack(spacing: 20) {
+                        Text("Loading the image")
+                            .scaledFont(size: 20)
+                        ProgressView()
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+                }
+                .padding(20)
             }
         }
         .padding()
@@ -195,7 +230,7 @@ struct SlideContentView: View {
 
 struct SlideView_Previews: PreviewProvider {
     static var previews: some View {
-        SlideView(slides: slides)
+        SlideView(slides: [slideData[slideData.count - 1]], slideIndex: .constant(0))
             .environment(\.fontScaleFactor, 1)
     }
 }
