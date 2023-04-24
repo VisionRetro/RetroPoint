@@ -7,21 +7,35 @@
 
 import SwiftUI
 
-final class TheEndStore {
-    @Published var outro: [String] = []
+struct TextScrollViewModel: Identifiable {
+    let id: Int
+    let text: String
+}
+
+final class TheEndStore: ObservableObject {
+    @Published var outro: [TextScrollViewModel] = []
 
     var final = [
         "RetroVision",
         "presents",
         "RetroPoint",
-        "an AI generated Slide app"
+        "Support of AI",
+        "Slide App",
+        "Greetings to",
+        "ADS Picasso",
+        "PP App",
+        "Agoda",
+        "!YOU!",
+        "Thank you",
+        "THE END"
     ]
 
     var index = 0
 
     func change() {
         guard index < final.count else { return }
-        outro.append(final[index])
+        let model = TextScrollViewModel(id: index, text: final[index])
+        outro.append(model)
         index += 1
     }
 }
@@ -31,23 +45,30 @@ struct FontScrollView: View {
 
     let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
 
-
     var body: some View {
         TimelineView(.animation) { timeline in
-            VStack {
-                ForEach(store.outro, id: \.self) { text in
-                    FontViewer(text: text)
+            ZStack {
+                Color.black
+
+                RadialGradient(colors: [.blue.opacity(0.6), .black], center: UnitPoint(x: 0.1, y: 0.2), startRadius: 0, endRadius: 300)
+                    .shadow(color: .white.opacity(0.3), radius: 32)
+
+                ForEach(store.outro) { model in
+                    FontViewer(store: store, text: model.text, index: model.index)
+                        .offset(x: 0, y: CGFloat((store.outro.count - 2) - model.id) * -100.0)
                 }
             }
         }
         .onReceive(timer) { time in
-            store.change()
+            withAnimation { store.change() }
         }
     }
 }
 
 struct FontViewer: View {
+    @ObservedObject var store: TheEndStore
     let text: String
+    let index: Int
 
     @State private var scale = 1
 
@@ -69,12 +90,10 @@ struct FontViewer: View {
                 .shadow(color: .red, radius: 32)
                 .shadow(color: .blue, radius: 32)
         }
-
-        .environment(\.fontScaleFactor, scale)
+        .environment(\.fontScaleFactor, store.index == index ? scale : 1)
         .onAppear {
             withAnimation(.easeInOut(duration: 2).delay(0.3)) { scale = 3 }
             withAnimation(.linear(duration: 0.1).repeatForever()) {
-
                 let start = colorStart
                 colorStart = colorEnd
                 colorEnd = start

@@ -7,14 +7,36 @@
 
 import SwiftUI
 
+final class AppStore: ObservableObject {
+    @Published var isEnd = false
+}
+
 @main
 struct RetroPointApp: App {
     let persistenceController = PersistenceController.shared
+    @StateObject var store = AppStore()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: store)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        }
+        .commands {
+            AppCommand(store: store)
+        }
+
+    }
+}
+
+struct AppCommand: Commands {
+    let store: AppStore
+
+    var body: some Commands {
+        CommandMenu("The End") {
+            Button("Show End Demo", action: {
+                store.isEnd.toggle()
+            })
         }
     }
 }
+

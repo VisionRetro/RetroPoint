@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var store: AppStore
+
     @State private var scale = 1
     @State private var slideIndex = 0
 
     var body: some View {
-        if slideIndex < 2 {
+        if store.isEnd {
+            FontScrollView()
+        } else {
             SlideView(slides: slideData, slideIndex: $slideIndex)
                 .frame(minWidth: 1000, minHeight: 720)
                 .modifier(SlideFooterViewModifier())
@@ -21,8 +25,6 @@ struct ContentView: View {
                     withAnimation(.spring().delay(0.5)) { scale = 3}
                 }
                 .id(slideIndex)
-        } else {
-            FontScrollView()
         }
     }
 }
@@ -74,6 +76,6 @@ struct SlideFooterViewModifier: ViewModifier {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(store: AppStore())
     }
 }
