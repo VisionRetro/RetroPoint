@@ -40,10 +40,7 @@ let slideData = [
     ]),
     SlideViewModel(title: "Faster prototyping", bulletPoints: [
         "No need manually checking each response, ChatGPT can help to compare our MVP output with ChatGPT output for better accuracy (i.e. grammar spelling, language correctness, etc)",
-        "Using advanced Natural Language Processing",
-        "Reduced development costs",
-        "Better scalability",
-        "Improved accuracy"
+        "Using advanced Natural Language Processing"
     ]),
     SlideViewModel(title: "Improved User Engagement", bulletPoints: [
         "Interactive response",
