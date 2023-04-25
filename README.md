@@ -14,7 +14,7 @@ Our Retro Point plans
 * 		Code final - and say thank you
 
 
-## Point 0 —> Point 1 Michael Script: 
+## Introduction 
 
 Hello everyone, —> introduction by Michael, Andre is silent.
 So for those who join over zoom, there’s no slide at this point, there will be a surprise as we love easter eggs between my current speech about what we will do in this talk. We will do a tech talk with a “real” tech activities.
@@ -24,6 +24,20 @@ So for those who join over zoom, there’s no slide at this point, there will be
 So is any one of you is an indie dev? Or startup founder? Or have a cool pet project as a hobby or even for your side income for living?
 Both of us have it even though no one download it on store, but, I believe we ever have that moment then stopped for a while because when we want to grow it more, we didn’t have time or hint what to do next, or even how to start it and build wonderful MVP. As a startup founder we always want to have at least MVP product that can be sufficient enough to be presented, promoted or even solid enough to be funded, but we back to same problem, no time, hard to multi-task, hard to find ideas, design, lack of resources, suggestion and more, or even for non engineer you don’t know how to code. All of you must have heard about many cool stuff related to AI these days (ChatGPT, OpenAI, Copilot, AutoGPT, StableDiffusion, many more), and somehow we kind of excited of it, but then we never try to use it beyond just a normal conversation with it. This talk is for you! We will explore more about utilize AI as a tool and assistant for us for creating MVP product of your idea, and make it happen. This talk we will focus on two greatest AI at the moment which is ChatGPT and Copilot. How? Learning by doing! (Michael shouting).
 We will building the app right now with you with the help of AI. (Andre comes)
+
+## Point 0 —> Point 1 Michael Script: 
+
+Okay, now let's ask ChatGPT about the ideas that we should write. 
+[Michael Open ChatGPT]
+Here I have prepared several prompt in advance for this talk. Let's read the first question, we need to pretend that we are all is non engineer but want to build the slide app, so here we write super dummy question without any formatting, let's see what they could answer. Oh now we see ChatGPT suggest us several outlining of the concept and idea including project structure. Basically all of this is a ground foundation for building our MVP product, but this is not enough, we need something more concrete. Before that let's open Xcode project, and Xcode is official IDE to build iOS application by the way. 
+Now let's ask first ChatGPT what are the code we need to fill in.
+
+[Michael Open ChatGPT and read it out]
+
+Now I have already a working code base on this input that we saved before after some refinement, so let's open our project. 
+[Michael shows the structure to the audience and run the app]
+
+Looks this is the apps after we use recommendation from ChatGPT! This sounds perfect, SwiftUI literally can build macOs app very quick with the help of ChatGPT! even non iOS programmer can do that, now what's next Andre? I handed over to you, stage is yours!
 
 ## Point 1 —> Point 2 Andre Script
 
