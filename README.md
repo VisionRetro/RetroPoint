@@ -239,6 +239,124 @@ Talk about SwiftUI fun stuff and quick creation of these buttons
 
 Now let’s add another new feature which is an image. Slide with supported image. I will add new slide type, let’s ask ChatGPT to assist us, pretend that we are a noob prompt engineer. Let’s positioning us as non engineer but want to build an app, put aside our knowledge regarding formatting, parsing, etc.
 
+```swift
+enum SlideContentType: Hashable {
+    case text(String)
+    case image(URL)
+}
+
+struct SlideViewModel: Identifiable {
+    let id = UUID()
+    let title: String
+    let bulletPoints: [SlideContentType]
+}
+
+let slides = [
+    SlideViewModel(title: "Why should I use SwiftUI?", bulletPoints: [
+        .text("It's easy to use"),
+        .text("It's declarative")
+    ]),
+    SlideViewModel(
+        title: "Image and Text Slide",
+        bulletPoints: [
+            .text("This is a text bullet point"),
+            .image(URL(string: "https://media.timeout.com/images/105240236/image.jpg")!),
+            .text("Another text bullet point")
+        ]
+    )
+]
+```
+
+```swift
+struct SlideView: View {
+    let slideViewModel: [SlideViewModel]
+    @State private var currentSlideIndex = 0
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            // Display the slide content based on the current slide index
+            let slide = slideViewModel[currentSlideIndex]
+
+            HStack {
+                Text(slide.title)
+                    .scaledFont(size: 20, weight: .bold)
+                    .foregroundColor(.white)
+            }
+            .padding(.vertical, 32)
+            .frame(maxWidth: .infinity, alignment: .center)
+
+            VStack(alignment: .leading) {
+                ForEach(slide.bulletPoints, id: \.self) { point in
+                    switch point {
+                    case .text(let text):
+                        HStack {
+                            Image(systemName: "circle.fill")
+                                .imageScale(.small)
+                                .font(.callout)
+
+                            Text(text)
+                                .scaledFont(size: 12, weight: .bold)
+                        }
+                        .padding(.bottom, 16)
+                        .foregroundColor(.white)
+
+                    case .image(let imageURL):
+                        HStack {
+                            Image(systemName: "circle.fill")
+                                .imageScale(.small)
+                                .font(.callout)
+
+                            AsyncImage(url: imageURL) { image in
+                                image.resizable()
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            .frame(width: 64, height: 64)
+                        }
+                        .padding(.bottom, 16)
+                    }
+                }
+            }
+            .padding(64)
+            Spacer()
+
+            HStack {
+                // Your previous slide button
+                Button(action: {
+                    if currentSlideIndex > 0 {
+                        currentSlideIndex -= 1
+                    }
+                }) {
+                    Label("Previous", systemImage: "chevron.left")
+                }
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+
+                Spacer()
+
+                // Your next slide button
+                Button(action: {
+                    if currentSlideIndex < slides.count - 1 {
+                        currentSlideIndex += 1
+                    }
+                }) {
+                    Label("Next", systemImage: "chevron.right")
+                }
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+            }
+            .padding(.horizontal)
+        }
+        .padding(50)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+    }
+}
+```
+
 ### [Jump directly to Point4 and explain one by one]
 
 When I wrote the code along with you guys, I just copied directly what I had from chat gpt.
