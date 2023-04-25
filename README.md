@@ -34,6 +34,8 @@ I left a Fix me in the Code
 
 ## Point 2 —> Point 3 Andre Script:
 
+### [Andre Talk]
+
 Use Point 2 as base with changes of removing the Management Code
 
 Add Code ViewModel Code:
@@ -98,12 +100,10 @@ struct SlideView: View {
 }
 ```
 
-
-
 Chat with Code
-I want the bullet points be left aligned
+`I want the bullet points be left aligned`
 
-change the alignment of the slides to be left
+Apply the changes.
 
 ## Point 3 —> Point 4 Michael Script:
 
@@ -203,3 +203,78 @@ Result ->  Speed and efficiency in handling data, more precise output, contextua
 -> ChatGPT's performance can vary over time, so it's important to continuously monitor and refine its performance. Regularly review ChatGPT's performance and adjust its training data or parameters as necessary to ensure optimal performance
 
 ## Point 4 —> Point 5 Andre Script:
+
+### [Andre Talk]
+
+First I like to talk about Copilot plugin for Xcode. The installment you can find on the github home page of the plugin, it explains very good. But what I missed in the beginning was the keyshortcuts. I guess they were added after I installed it.
+
+Enable the Accessibility Keyboard and only then the keyshorts works. Open the keybinding editor. 
+
+The second tip I have is use structured code. What does it mean?
+
+I added some code like this:
+```swift
+final class MapStore: ObservableObject {
+    @Published var map: String
+
+    init(map: String) {
+        self.map = map
+    }
+}
+```
+
+Behind that code usually Copilot sugguest some `Store` code in the same way and style.
+
+In the TabView if we add a new `VStack {}` it usually adds a new tabItem with corresponding parameters. 
+
+Then in the section of the button styles it can create a new style by its own: `GlowingButtonStyle` 
+
+One suggestion was this:
+```swift
+struct GlowingButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(40)
+            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
+            .overlay(
+                RoundedRectangle(cornerRadius: 40)
+                    .stroke(Color.blue, lineWidth: 4)
+                    .scaleEffect(configuration.isPressed ? 1.2 : 1.0)
+                    .opacity(configuration.isPressed ? 0 : 1)
+            )
+            .animation(.interpolatingSpring(stiffness: 10, damping: 1))
+    }
+}
+```
+
+Next topic Writing UTs, this is the outcome
+```swift
+    func testInit() {
+        XCTAssertEqual(sut.sides, .six)
+        XCTAssertEqual(sut.min, 1)
+        XCTAssertEqual(sut.max, 6)
+    }
+
+    func testRoll() {
+        let result = sut.role()
+        XCTAssertGreaterThanOrEqual(result, 1)
+        XCTAssertLessThanOrEqual(result, 6)
+    }
+
+    func testInitWithString() {
+        sut = Die(text: "d6")
+        XCTAssertEqual(sut.sides, .six)
+        XCTAssertEqual(sut.min, 1)
+        XCTAssertEqual(sut.max, 6)
+    }
+```
+
+The add code comments to some code, prompt to code.
+
+We are going to come to an end!
+
+In the beginning we were talking about an Easter Egg we have.
+Some one you will remember.... let start `The End`
