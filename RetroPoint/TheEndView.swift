@@ -21,7 +21,7 @@ final class TheEndStore: ObservableObject {
         "Greetings to",
         "ADS Picass0",
         "BAD EXEC",
-        "pp App",
+        "PP App",
         "PS-2023-Q2-S1",
         "Amiga A4ooo",
         "0xDEADBEEF",
@@ -29,6 +29,8 @@ final class TheEndStore: ObservableObject {
         "นิด",
         "hackingwithswift.com",
         "kavsoft",
+        "Selamat datang!",
+        "Amity peeps",
         "Agoda",
         "!YOU!",
         "************",
@@ -36,6 +38,7 @@ final class TheEndStore: ObservableObject {
         "No Computer were harmed",
         "Thank you",
         "github.com/VisionRetro",
+        "Open for funding: RetroPoint",
         "THE END"
     ]
 
