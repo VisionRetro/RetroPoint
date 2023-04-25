@@ -5,6 +5,7 @@
 //  Created by Andre Trettin on 25/4/2566 BE.
 //
 
+import AVFoundation
 import SwiftUI
 
 final class TheEndStore: ObservableObject {
@@ -40,6 +41,21 @@ final class TheEndStore: ObservableObject {
     var mX: CGFloat = 150
     var mY: CGFloat = -100
 
+    var playerLooper: AVPlayerLooper?
+    var queuePlayer: AVQueuePlayer?
+
+    func start() {
+        guard playerLooper == nil else { return }
+        let file = Bundle.main.url(forResource: "RetroSound", withExtension: "m4a")
+
+        let asset: AVAsset = AVAsset(url: file!)
+
+        let playerItem = AVPlayerItem(asset: asset)
+        self.queuePlayer = AVQueuePlayer(playerItem: playerItem)
+        self.playerLooper = AVPlayerLooper(player: self.queuePlayer! , templateItem: playerItem)
+        self.queuePlayer?.play()
+    }
+
     func change(for size: CGSize) {
         let hW = (size.width - 150) / 2
         let hH = (size.height - 100) / 2
@@ -50,6 +66,7 @@ final class TheEndStore: ObservableObject {
         aY = negA * Double.random(in: 100...hH)
         mX = Double.random(in: 150...hW)
         mY = negM * Double.random(in: 100...hH)
+
         // size
         guard index < final.count else {
             loopCounter += 1
@@ -64,7 +81,6 @@ final class TheEndStore: ObservableObject {
         outro.append(model)
         index += 1
     }
-
 }
 
 
@@ -99,6 +115,7 @@ struct TheEndView: View {
             .onReceive(timer) { time in
                 withAnimation { store.change(for: proxy.size) }
             }
+            .onAppear { store.start() }
         }
     }
 }

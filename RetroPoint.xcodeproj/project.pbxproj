@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595461F629F77C000025C1A4 /* RetroSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 595461F529F77AF40025C1A4 /* RetroSound.m4a */; };
 		597DC5F229F640EA002A9AC2 /* SomeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F129F640EA002A9AC2 /* SomeCode.swift */; };
 		597DC5F429F66C22002A9AC2 /* FontViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F329F66C22002A9AC2 /* FontViewer.swift */; };
 		597DC5F629F66DF7002A9AC2 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F529F66DF7002A9AC2 /* RandomColor.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		595461F529F77AF40025C1A4 /* RetroSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = RetroSound.m4a; sourceTree = "<group>"; };
 		597DC5F129F640EA002A9AC2 /* SomeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeCode.swift; sourceTree = "<group>"; };
 		597DC5F329F66C22002A9AC2 /* FontViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewer.swift; sourceTree = "<group>"; };
 		597DC5F529F66DF7002A9AC2 /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				AED51FDF29EE7F1900B0F59F /* RetroPoint.entitlements */,
 				AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */,
 				AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */,
+				595461F529F77AF40025C1A4 /* RetroSound.m4a */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED51FE229EE7F1900B0F59F /* Preview Assets.xcassets in Resources */,
+				595461F629F77C000025C1A4 /* RetroSound.m4a in Resources */,
 				AED51FDE29EE7F1900B0F59F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
