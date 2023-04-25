@@ -39,19 +39,30 @@ let slideData = [
         "Improved accuracy"
     ]),
     SlideViewModel(title: "Faster prototyping", bulletPoints: [
-        "No need manually checking each response, ChatGPT can help to compare our MVP output with ChatGPT output for better accuracy (i.e. grammar spelling, language correctness, etc)",
+        "ChatGPT can generate user input, saving time on designing and coding complex input systems",
+        "Reduce the need for manual input testing, allowing for quicker iteration and refine",
+        "Enable early user testing, allowing for rapid iteration and refinement based on user feedback",
+        "Lower the barrier to entry for prototyping, enabling even non-technical team members to contribute to the development process",
+        "Faster prototyping can accelerate the development timeline, allowing for quicker time-to-market and competitive advantage",
+        "No manual checking and improve response accuracy (i.e. grammar spelling, language correctness, etc)",
         "Using advanced Natural Language Processing"
     ]),
     SlideViewModel(title: "Improved User Engagement", bulletPoints: [
         "Interactive response",
         "Personalized response based on input",
-        "Record history of conversation"
+        "Handles large volumes of inquiries in real-time",
+        "Record history of conversation",
+        "Provides 24/7 support"
     ]),
     SlideViewModel(title: "Reduced development costs", bulletPoints: [
         "Personal Assistants (copywriting, marketing, product, etc)",
         "Help with the tedious task (i.e. generating mock data, content outlines, ideas)",
-        "Automating most-time consuming tasks (i.e. FAQ)",
-        "Help to find and identify root cause of a bug"
+        "Automating time-consuming tasks (i.e. FAQ, inquiries, security thread detection)",
+        "Improves accuracy and reduces errors and downtime",
+        "Help to find and identify root cause of a bug",
+        "Improves efficiency and speed",
+        "Lowers the barrier to entry for development",
+        "Reduces the need for physical resources"
     ]),
     SlideViewModel(title: "Better scalability", bulletPoints: [
         "Generating summarizes in large numbers / volume in real time (Aggregator MVP)",
@@ -60,14 +71,22 @@ let slideData = [
     SlideViewModel(title: "Improved accuracy", bulletPoints: [
         "Generating more precise and accurate results based on user input",
         "Medical diagnosis MVP Product (input patient symptoms product can generate list of potential diagnoses along with recommended tests and treatments)",
-        "Combined the result with internal database or doctor's experience / knowledge"
+        "Combined the result with internal database or doctor's experience / knowledge",
+        "Speed and efficiency in handling data",
+        "Contextual understanding and analysis",
+        "Improved analysis and decision-making",
+        "Reduced risk of bias and subjectivity"
     ]),
     SlideViewModel(title: "Make the best out of ChatGPT", bulletPoints: [
+        "Understand the limitations of ChatGPT",
         "Make the AI as personal assistants",
+        "Incorporate human oversight and intervention",
         "Construct good input prompt and train the AI to make them learn to make suitable and accurate response",
         "Give some rules related to the output inside input prompt",
         "Learn how to parse string to your expected format",
-        "Connect output with your internal data"
+        "Connect output with your internal data",
+        "Use ChatGPT for specific tasks and applications",
+        "Continuously monitor and refine ChatGPT's performance"
     ]),
     SlideViewModel(title: "Slide with Image", bulletPoints: [
         "Support Images",
