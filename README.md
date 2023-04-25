@@ -130,6 +130,109 @@ So now let’s start to expand the slide more than 1. What we should add next? O
 ### [Adding second slide content from first point and ChatGPT as well]
 ### [Add more prev and next button]
 
+```swift
+let slides = [
+    SlideViewModel(title: "Why should I use SwiftUI?", bulletPoints: [
+        "It's easy to use",
+        "It's declarative",
+        "It's cross platform",
+        "It's reactive",
+        "It's fast",
+        "It's fun"
+    ]),
+    SlideViewModel(title: "What are the benefits of ChatGPT for MVP", bulletPoints: [
+        "Rapid Prototyping",
+        "Cost-Effective",
+        "Enhanced User Experience",
+        "Multilingual Support",
+        "Customer Feedback Analysis",
+        "Streamlined Onboarding"
+    ]),
+    SlideViewModel(title: "Rapid Prototyping", bulletPoints: [
+        "Accelerated Content Creation",
+        "Dynamic Conversational Agents",
+        "Scalable Idea Generation",
+        "Faster User Testing",
+        "Simplified A/B Testing",
+        "Enhanced Collaboration"
+    ]),
+]
+```
+
+then for the button
+
+```swift
+struct SlideView: View {
+    let slideViewModel: [SlideViewModel]
+    @State private var currentSlideIndex = 0
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            // Display the slide content based on the current slide index
+            let slide = slideViewModel[currentSlideIndex]
+
+            HStack {
+                Text(slide.title)
+                    .scaledFont(size: 20, weight: .bold)
+                    .foregroundColor(.white)
+            }
+            .padding(.vertical, 32)
+            .frame(maxWidth: .infinity, alignment: .center)
+
+            VStack(alignment: .leading) {
+                ForEach(slide.bulletPoints, id: \.self) { point in
+                    HStack {
+                        Image(systemName: "circle.fill")
+                            .imageScale(.small)
+                            .font(.callout)
+
+                        Text(point)
+                            .scaledFont(size: 12, weight: .bold)
+                    }
+                    .padding(.bottom, 16)
+                    .foregroundColor(.white)
+                }
+            }
+            .padding(64)
+            Spacer()
+
+            HStack {
+                // Your previous slide button
+                Button(action: {
+                    if currentSlideIndex > 0 {
+                        currentSlideIndex -= 1
+                    }
+                }) {
+                    Label("Previous", systemImage: "chevron.left")
+                }
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+
+                Spacer()
+
+                // Your next slide button
+                Button(action: {
+                    if currentSlideIndex < slides.count - 1 {
+                        currentSlideIndex += 1
+                    }
+                }) {
+                    Label("Next", systemImage: "chevron.right")
+                }
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+            }
+            .padding(.horizontal)
+        }
+        .padding(50)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+    }
+}
+```
+
 Talk about SwiftUI fun stuff and quick creation of these buttons
 
 ### [Add Image Slide]
