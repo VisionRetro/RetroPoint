@@ -30,23 +30,20 @@ let slideData = [
         "It's fast",
         "It's fun"
     ]),
-    SlideViewModel(title: "Benefits of using ChatGPT for MVP Development?", bulletPoints: [
-        "Faster prototyping",
-        "Improved user engagement",
-        "Reduced development costs",
-        "Better scalability",
-        "Improved accuracy"
+    SlideViewModel(title: "Benefits of using ChatGPT for MVP Development", bulletPoints: [
+        "Faster Prototyping",
+        "Improved User Engagement and Scalability",
+        "Reduced development costs"
     ]),
     SlideViewModel(title: "Faster prototyping", bulletPoints: [
-        "ChatGPT can generate user input, saving time on designing and coding complex input systems",
-        "Reduce the need for manual input testing, allowing for quicker iteration and refine",
-        "Enable early user testing, allowing for rapid iteration and refinement based on user feedback",
-        "Lower the barrier to entry for prototyping, enabling even non-technical team members to contribute to the development process",
-        "Faster prototyping can accelerate the development timeline, allowing for quicker time-to-market and competitive advantage",
+        "Saving time on designing and coding complex input systems",
+        "Reduce the need for manual input testing and enable early user testing",
+        "Lower the barrier to entry for prototyping",
+        "Accelerate the development timeline",
         "No manual checking and improve response accuracy (i.e. grammar spelling, language correctness, etc)",
         "Using advanced Natural Language Processing"
     ]),
-    SlideViewModel(title: "Improved User Engagement", bulletPoints: [
+    SlideViewModel(title: "Improved User Engagement and Scalability", bulletPoints: [
         "Interactive response",
         "Personalized response based on input",
         "Handles large volumes of inquiries in real-time",
@@ -63,25 +60,16 @@ let slideData = [
         "Lowers the barrier to entry for development",
         "Reduces the need for physical resources"
     ]),
-    SlideViewModel(title: "Better scalability", bulletPoints: [
-        "Generating summarizes in large numbers / volume in real time (Aggregator MVP)",
-        "Identifying security logs as potential to cyber attacks and provide recommendations"
-    ]),
-    SlideViewModel(title: "Improved accuracy", bulletPoints: [
-        "Generating more precise and accurate results based on user input",
-        "Medical diagnosis MVP Product (input patient symptoms product can generate list of potential diagnoses along with recommended tests and treatments)",
-        "Combined the result with internal database or doctor's experience / knowledge",
-        "Speed and efficiency in handling data",
-        "Contextual understanding and analysis",
-        "Improved analysis and decision-making",
-        "Reduced risk of bias and subjectivity"
+    SlideViewModel(title: "Medical diagnosis MVP Product", bulletPoints: [
+        "Doctor -> input patient symptoms",
+        "Output -> compare / combine data base on internal inventory that the company had",
+        "User Output ->  generate list of potential diagnoses along with recommended tests and treatments with list of availabilities of price package from hospital",
+        "Result ->  Speed and efficiency in handling data, more precise output, contextual understanding and analysis, improved analysis and decision-making, and reduced risk of bias and subjectivity"
     ]),
     SlideViewModel(title: "Make the best out of ChatGPT", bulletPoints: [
         "Understand the limitations of ChatGPT",
-        "Make the AI as personal assistants",
         "Incorporate human oversight and intervention",
-        "Construct good input prompt and train the AI to make them learn to make suitable and accurate response",
-        "Give some rules related to the output inside input prompt",
+        "Better input prompt = better outcome",
         "Learn how to parse string to your expected format",
         "Connect output with your internal data",
         "Use ChatGPT for specific tasks and applications",
