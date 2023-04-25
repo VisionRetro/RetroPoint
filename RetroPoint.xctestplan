@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "405A5663-C28A-4851-A3EF-F404AF9C2896",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:RetroPoint.xcodeproj",
+      "identifier" : "AED51FD029EE7F1800B0F59F",
+      "name" : "RetroPoint"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:RetroPoint.xcodeproj",
+        "identifier" : "AED51FE629EE7F1900B0F59F",
+        "name" : "RetroPointTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:RetroPoint.xcodeproj",
+        "identifier" : "AED51FF029EE7F1900B0F59F",
+        "name" : "RetroPointUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
