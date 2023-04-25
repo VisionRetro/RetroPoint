@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		595461F629F77C000025C1A4 /* RetroSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 595461F529F77AF40025C1A4 /* RetroSound.m4a */; };
-		597DC5F229F640EA002A9AC2 /* SomeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F129F640EA002A9AC2 /* SomeCode.swift */; };
-		597DC5F429F66C22002A9AC2 /* FontViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F329F66C22002A9AC2 /* FontViewer.swift */; };
-		597DC5F629F66DF7002A9AC2 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F529F66DF7002A9AC2 /* RandomColor.swift */; };
 		595461FB29F7A8960025C1A4 /* DieCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595461F829F7A8960025C1A4 /* DieCounter.swift */; };
 		595461FC29F7A8960025C1A4 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595461F929F7A8960025C1A4 /* Die.swift */; };
 		595461FD29F7A8960025C1A4 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595461FA29F7A8960025C1A4 /* Dice.swift */; };
 		595461FF29F7A8EE0025C1A4 /* DieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595461FE29F7A8EE0025C1A4 /* DieTests.swift */; };
 		5954620129F7A9A70025C1A4 /* RegularExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5954620029F7A9A70025C1A4 /* RegularExpressionParser.swift */; };
+		597DC5F229F640EA002A9AC2 /* SomeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F129F640EA002A9AC2 /* SomeCode.swift */; };
+		597DC5F429F66C22002A9AC2 /* FontViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F329F66C22002A9AC2 /* FontViewer.swift */; };
+		597DC5F629F66DF7002A9AC2 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F529F66DF7002A9AC2 /* RandomColor.swift */; };
 		5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */; };
 		5999EBD829F29F4A00C2E880 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD729F29F4A00C2E880 /* SlideView.swift */; };
 		59D282CA29F75F9A0031826F /* MorphingDevView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D282C929F75F9A0031826F /* MorphingDevView.swift */; };
@@ -56,15 +56,16 @@
 
 /* Begin PBXFileReference section */
 		595461F529F77AF40025C1A4 /* RetroSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = RetroSound.m4a; sourceTree = "<group>"; };
-		597DC5F129F640EA002A9AC2 /* SomeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeCode.swift; sourceTree = "<group>"; };
-		597DC5F329F66C22002A9AC2 /* FontViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewer.swift; sourceTree = "<group>"; };
-		597DC5F529F66DF7002A9AC2 /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		595461F829F7A8960025C1A4 /* DieCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieCounter.swift; sourceTree = "<group>"; };
 		595461F929F7A8960025C1A4 /* Die.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		595461FA29F7A8960025C1A4 /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
 		595461FE29F7A8EE0025C1A4 /* DieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieTests.swift; sourceTree = "<group>"; };
 		5954620029F7A9A70025C1A4 /* RegularExpressionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionParser.swift; sourceTree = "<group>"; };
 		5954620229F7AA090025C1A4 /* RetroPoint.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = RetroPoint.xctestplan; sourceTree = "<group>"; };
+		596578E929F7AE6E00F795E4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		597DC5F129F640EA002A9AC2 /* SomeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeCode.swift; sourceTree = "<group>"; };
+		597DC5F329F66C22002A9AC2 /* FontViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewer.swift; sourceTree = "<group>"; };
+		597DC5F529F66DF7002A9AC2 /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableFont.swift; sourceTree = "<group>"; };
 		5999EBD729F29F4A00C2E880 /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 		59D282C929F75F9A0031826F /* MorphingDevView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingDevView.swift; sourceTree = "<group>"; };
@@ -172,6 +173,7 @@
 		AED51FC829EE7F1800B0F59F = {
 			isa = PBXGroup;
 			children = (
+				596578E929F7AE6E00F795E4 /* README.md */,
 				5954620229F7AA090025C1A4 /* RetroPoint.xctestplan */,
 				AED51FD329EE7F1800B0F59F /* RetroPoint */,
 				AED51FEA29EE7F1900B0F59F /* RetroPointTests */,
