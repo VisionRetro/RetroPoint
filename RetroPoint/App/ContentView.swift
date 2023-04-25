@@ -14,8 +14,13 @@ struct ContentView: View {
     @State private var slideIndex = 0
 
     var body: some View {
-        if store.isEnd {
+        if store.state == .end  {
             TheEndView()
+        } else if store.state == .reallyEnd {
+            Image("Slido")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .ignoresSafeArea()
         } else {
             SlideView(slides: slideData, slideIndex: $slideIndex)
                 .frame(minWidth: 1000, minHeight: 720)

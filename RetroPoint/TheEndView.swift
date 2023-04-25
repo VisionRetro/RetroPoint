@@ -12,7 +12,7 @@ final class TheEndStore: ObservableObject {
     @Published var outro: [TextScrollViewModel] = []
 
     var final = [
-        "RetroVision",
+        "VisionRetro",
         "presents",
         "RetroPoint",
         "Support of AI",
@@ -28,7 +28,7 @@ final class TheEndStore: ObservableObject {
         "!YOU!",
         "************",
         "Thank you",
-        "",
+        "github.com/VisionRetro",
         "THE END"
     ]
 
