@@ -15,7 +15,7 @@ struct ContentView: View {
 
     var body: some View {
         if store.isEnd {
-            FontScrollView()
+            TheEndView()
         } else {
             SlideView(slides: slideData, slideIndex: $slideIndex)
                 .frame(minWidth: 1000, minHeight: 720)
