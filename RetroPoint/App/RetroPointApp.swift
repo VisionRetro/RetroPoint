@@ -7,8 +7,16 @@
 
 import SwiftUI
 
+enum TheEndState {
+    case start
+    case end
+    case reallyEnd
+}
+
+
+
 final class AppStore: ObservableObject {
-    @Published var isEnd = false
+    @Published var state: TheEndState = .start
 }
 
 @main
@@ -34,9 +42,14 @@ struct AppCommand: Commands {
     var body: some Commands {
         CommandMenu("The End") {
             Button("Show End Demo", action: {
-                store.isEnd.toggle()
+                store.state = .end
             })
             .keyboardShortcut("e")
+
+            Button("Show End Slido", action: {
+                store.state = .reallyEnd
+            })
+            .keyboardShortcut("r")
         }
     }
 }
