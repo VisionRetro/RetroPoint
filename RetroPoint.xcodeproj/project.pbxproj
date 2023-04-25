@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595461F629F77C000025C1A4 /* RetroSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 595461F529F77AF40025C1A4 /* RetroSound.m4a */; };
 		597DC5F229F640EA002A9AC2 /* SomeCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F129F640EA002A9AC2 /* SomeCode.swift */; };
 		597DC5F429F66C22002A9AC2 /* FontViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F329F66C22002A9AC2 /* FontViewer.swift */; };
 		597DC5F629F66DF7002A9AC2 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC5F529F66DF7002A9AC2 /* RandomColor.swift */; };
+		595461FB29F7A8960025C1A4 /* DieCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595461F829F7A8960025C1A4 /* DieCounter.swift */; };
+		595461FC29F7A8960025C1A4 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595461F929F7A8960025C1A4 /* Die.swift */; };
+		595461FD29F7A8960025C1A4 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595461FA29F7A8960025C1A4 /* Dice.swift */; };
+		595461FF29F7A8EE0025C1A4 /* DieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595461FE29F7A8EE0025C1A4 /* DieTests.swift */; };
+		5954620129F7A9A70025C1A4 /* RegularExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5954620029F7A9A70025C1A4 /* RegularExpressionParser.swift */; };
 		5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */; };
 		5999EBD829F29F4A00C2E880 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999EBD729F29F4A00C2E880 /* SlideView.swift */; };
+		59D282CA29F75F9A0031826F /* MorphingDevView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D282C929F75F9A0031826F /* MorphingDevView.swift */; };
+		59D282CC29F76C920031826F /* TheEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D282CB29F76C920031826F /* TheEndView.swift */; };
 		8EF50A8029F3E6FE00018D66 /* AnimationEndCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF50A7F29F3E6FE00018D66 /* AnimationEndCallback.swift */; };
 		AED51FD529EE7F1800B0F59F /* RetroPointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */; };
 		AED51FD729EE7F1800B0F59F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED51FD629EE7F1800B0F59F /* Persistence.swift */; };
@@ -47,11 +55,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		595461F529F77AF40025C1A4 /* RetroSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = RetroSound.m4a; sourceTree = "<group>"; };
 		597DC5F129F640EA002A9AC2 /* SomeCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeCode.swift; sourceTree = "<group>"; };
 		597DC5F329F66C22002A9AC2 /* FontViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewer.swift; sourceTree = "<group>"; };
 		597DC5F529F66DF7002A9AC2 /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
+		595461F829F7A8960025C1A4 /* DieCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieCounter.swift; sourceTree = "<group>"; };
+		595461F929F7A8960025C1A4 /* Die.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
+		595461FA29F7A8960025C1A4 /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		595461FE29F7A8EE0025C1A4 /* DieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieTests.swift; sourceTree = "<group>"; };
+		5954620029F7A9A70025C1A4 /* RegularExpressionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionParser.swift; sourceTree = "<group>"; };
+		5954620229F7AA090025C1A4 /* RetroPoint.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = RetroPoint.xctestplan; sourceTree = "<group>"; };
 		5999EBD529F29F3B00C2E880 /* AnimatableFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableFont.swift; sourceTree = "<group>"; };
 		5999EBD729F29F4A00C2E880 /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		59D282C929F75F9A0031826F /* MorphingDevView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingDevView.swift; sourceTree = "<group>"; };
+		59D282CB29F76C920031826F /* TheEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheEndView.swift; sourceTree = "<group>"; };
 		8EF50A7F29F3E6FE00018D66 /* AnimationEndCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEndCallback.swift; sourceTree = "<group>"; };
 		AED51FD129EE7F1800B0F59F /* RetroPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPointApp.swift; sourceTree = "<group>"; };
@@ -98,6 +115,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		595461F729F7A8960025C1A4 /* DiceCode */ = {
+			isa = PBXGroup;
+			children = (
+				5954620029F7A9A70025C1A4 /* RegularExpressionParser.swift */,
+				595461F829F7A8960025C1A4 /* DieCounter.swift */,
+				595461F929F7A8960025C1A4 /* Die.swift */,
+				595461FA29F7A8960025C1A4 /* Dice.swift */,
+			);
+			path = DiceCode;
+			sourceTree = "<group>";
+		};
 		5986B3CC29F28CE20005A01E /* MacViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +148,7 @@
 				AED51FDF29EE7F1900B0F59F /* RetroPoint.entitlements */,
 				AED51FD829EE7F1800B0F59F /* RetroPoint.xcdatamodeld */,
 				AED51FD429EE7F1800B0F59F /* RetroPointApp.swift */,
+				595461F529F77AF40025C1A4 /* RetroSound.m4a */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -143,6 +172,7 @@
 		AED51FC829EE7F1800B0F59F = {
 			isa = PBXGroup;
 			children = (
+				5954620229F7AA090025C1A4 /* RetroPoint.xctestplan */,
 				AED51FD329EE7F1800B0F59F /* RetroPoint */,
 				AED51FEA29EE7F1900B0F59F /* RetroPointTests */,
 				AED51FF429EE7F1900B0F59F /* RetroPointUITests */,
@@ -165,12 +195,15 @@
 			isa = PBXGroup;
 			children = (
 				5986B3CD29F28D380005A01E /* App */,
+				595461F729F7A8960025C1A4 /* DiceCode */,
 				5986B3CE29F291BE0005A01E /* Extern */,
 				5986B3CC29F28CE20005A01E /* MacViews */,
 				5999EBD729F29F4A00C2E880 /* SlideView.swift */,
 				597DC5F129F640EA002A9AC2 /* SomeCode.swift */,
 				597DC5F329F66C22002A9AC2 /* FontViewer.swift */,
 				597DC5F529F66DF7002A9AC2 /* RandomColor.swift */,
+				59D282C929F75F9A0031826F /* MorphingDevView.swift */,
+				59D282CB29F76C920031826F /* TheEndView.swift */,
 			);
 			path = RetroPoint;
 			sourceTree = "<group>";
@@ -187,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				AED51FEB29EE7F1900B0F59F /* RetroPointTests.swift */,
+				595461FE29F7A8EE0025C1A4 /* DieTests.swift */,
 			);
 			path = RetroPointTests;
 			sourceTree = "<group>";
@@ -305,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED51FE229EE7F1900B0F59F /* Preview Assets.xcassets in Resources */,
+				595461F629F77C000025C1A4 /* RetroSound.m4a in Resources */,
 				AED51FDE29EE7F1900B0F59F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,16 +369,22 @@
 				597DC5F629F66DF7002A9AC2 /* RandomColor.swift in Sources */,
 				8EF50A8029F3E6FE00018D66 /* AnimationEndCallback.swift in Sources */,
 				597DC5F229F640EA002A9AC2 /* SomeCode.swift in Sources */,
+				595461FC29F7A8960025C1A4 /* Die.swift in Sources */,
 				AED51FDA29EE7F1800B0F59F /* RetroPoint.xcdatamodeld in Sources */,
 				5999EBD629F29F3B00C2E880 /* AnimatableFont.swift in Sources */,
 				AED5200D29EE82F400B0F59F /* ToolbarView.swift in Sources */,
 				AED5200729EE822000B0F59F /* SidebarView.swift in Sources */,
+				5954620129F7A9A70025C1A4 /* RegularExpressionParser.swift in Sources */,
+				595461FD29F7A8960025C1A4 /* Dice.swift in Sources */,
 				5999EBD829F29F4A00C2E880 /* SlideView.swift in Sources */,
 				597DC5F429F66C22002A9AC2 /* FontViewer.swift in Sources */,
 				AED5200529EE821500B0F59F /* ContentView.swift in Sources */,
+				59D282CC29F76C920031826F /* TheEndView.swift in Sources */,
+				595461FB29F7A8960025C1A4 /* DieCounter.swift in Sources */,
 				AED5200B29EE82E900B0F59F /* InspectorView.swift in Sources */,
 				AED51FD729EE7F1800B0F59F /* Persistence.swift in Sources */,
 				AED5200929EE82B200B0F59F /* MainContentView.swift in Sources */,
+				59D282CA29F75F9A0031826F /* MorphingDevView.swift in Sources */,
 				AED5200F29EE889500B0F59F /* NewPresentationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595461FF29F7A8EE0025C1A4 /* DieTests.swift in Sources */,
 				AED51FEC29EE7F1900B0F59F /* RetroPointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

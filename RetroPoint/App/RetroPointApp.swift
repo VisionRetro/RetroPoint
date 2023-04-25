@@ -36,6 +36,7 @@ struct AppCommand: Commands {
             Button("Show End Demo", action: {
                 store.isEnd.toggle()
             })
+            .keyboardShortcut("e")
         }
     }
 }
