@@ -20,13 +20,20 @@ final class TheEndStore: ObservableObject {
         "------------",
         "Greetings to",
         "ADS Picass0",
+        "BAD EXEC",
         "pp App",
         "PS-2023-Q2-S1",
         "Amiga A4ooo",
+        "0xDEADBEEF",
+        "Guru Meditation",
         "นิด",
+        "hackingwithswift.com",
+        "kavsoft",
         "Agoda",
         "!YOU!",
         "************",
+        "In this production",
+        "No Computer were harmed",
         "Thank you",
         "github.com/VisionRetro",
         "THE END"
@@ -69,12 +76,12 @@ final class TheEndStore: ObservableObject {
 
         // size
         guard index < final.count else {
-            loopCounter += 1
-            if loopCounter > 3 {
-                outro = []
-                index = 0
-                loopCounter = 0
-            }
+//            loopCounter += 1
+//            if loopCounter > 3 {
+//                outro = []
+//                index = 0
+//                loopCounter = 0
+//            }
             return
         }
         let model = TextScrollViewModel(id: index, text: final[index])
