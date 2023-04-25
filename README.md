@@ -30,10 +30,75 @@ We will building the app right now with you with the help of AI. (Andre comes)
 From 1st example to first Slide
 Now we have seen the great use of ChatGPT, but I think it is oversized for a MVP or a prototype. Let's stripe down the boring `hard` stuff of management and focus to more reliable MVP for our starting point. 
 
+I left a Fix me in the Code
 
 ## Point 2 —> Point 3 Andre Script:
 
 Use Point 2 as base with changes of removing the Management Code
+
+Add Code ViewModel Code:
+```swift
+struct SlideViewModel {
+    let title: String
+    let bulletPoints: [String]
+}
+```
+
+Then create a slide viewmodel with `Why should I use SwiftUI?` I will try to use the copilot, if it give me the right answer.
+```swift
+let slides = [
+    SlideViewModel(title: "Why should I use SwiftUI?", bulletPoints: [
+        "It's easy to use",
+        "It's declarative",
+        "It's cross platform",
+        "It's reactive",
+        "It's fast",
+        "It's fun"
+    ]),
+]
+```
+
+Then I will write the slide view code, by my self with the help of Copilot.
+The end result should look like this
+```swift
+struct SlideView: View {
+    let slideViewModel: SlideViewModel
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Text(slideViewModel.title)
+                    .scaledFont(size: 20, weight: .bold)
+                    .foregroundColor(.white)
+            }
+            .padding(.vertical, 32)
+            .frame(maxWidth: .infinity, alignment: .center)
+
+            VStack(alignment: .leading) {
+                ForEach(slideViewModel.bulletPoints, id: \.self) { point in
+                    HStack {
+                        Image(systemName: "circle.fill")
+                            .imageScale(.small)
+                            .font(.callout)
+
+                        Text(point)
+                            .scaledFont(size: 12, weight: .bold)
+                    }
+                    .padding(.bottom, 16)
+                    .foregroundColor(.white)
+                }
+            }
+            .padding(64)
+            Spacer()
+
+        }
+        .padding(50)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+    }
+}
+```
+
+
 
 Chat with Code
 I want the bullet points be left aligned
