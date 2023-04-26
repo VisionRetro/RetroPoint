@@ -60,12 +60,6 @@ let slideData = [
         "Lowers the barrier to entry for development",
         "Reduces the need for physical resources"
     ]),
-    SlideViewModel(title: "Medical diagnosis MVP Product", bulletPoints: [
-        "Doctor -> input patient symptoms",
-        "Output -> compare / combine data base on internal inventory that the company had",
-        "User Output ->  generate list of potential diagnoses along with recommended tests and treatments with list of availabilities of price package from hospital",
-        "Result ->  Speed and efficiency in handling data, more precise output, contextual understanding and analysis, improved analysis and decision-making, and reduced risk of bias and subjectivity"
-    ]),
     SlideViewModel(title: "Make the best out of ChatGPT", bulletPoints: [
         "Understand the limitations of ChatGPT",
         "Incorporate human oversight and intervention",
