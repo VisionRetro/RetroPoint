@@ -40,8 +40,7 @@ let slideData = [
         "Reduce the need for manual input testing and enable early user testing",
         "Lower the barrier to entry for prototyping",
         "Accelerate the development timeline",
-        "No manual checking and improve response accuracy (i.e. grammar spelling, language correctness, etc)",
-        "Using advanced Natural Language Processing"
+        "No manual checking and improve response accuracy (i.e. grammar spelling, language correctness, etc)"
     ]),
     SlideViewModel(title: "Improved User Engagement and Scalability", bulletPoints: [
         "Interactive response",
